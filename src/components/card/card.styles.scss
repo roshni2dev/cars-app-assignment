@@ -1,0 +1,143 @@
+.card {
+    max-width: 400px;
+    width: auto;
+    padding: 7px;
+    background: #f3f5fc;
+    border-radius: 8px;
+    border: 1px solid #f5f5f5;
+  
+  
+
+    & .image {
+        width: calc(400px - 14px);
+        height: 200px;
+        border-radius: 8px;
+        // object-fit: fill;
+    }
+
+    & .content {
+        padding: 16px;
+        border-bottom:1px solid lightgray ;
+
+        & .heading-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & .card-heading {
+                font-size: 20px !important;
+                font-weight: bold;
+                color: #282828;
+                margin-top: 10px;
+            }
+
+            & .card-model {
+                border: 1px dashed #4999ee;
+                border-radius: 50px;
+                padding: 0px 15px;
+                display: inline;
+            }
+        }
+    }
+
+    & .action-area {
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+
+
+    & .price {
+        color: #282828;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+        & .rent-now-button {
+            background: #4999ee;
+            color: #fff;
+            text-transform: capitalize;
+            border-radius: 10px;
+            padding: 3px 10px;
+            font-weight: 600;
+            font-size: 12px;
+
+            &:hover {
+                background: #4999ee;
+                color: #fff;
+            }
+        }
+
+        & .favorite-icon-container {
+            background: #dbeafb;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+
+            & .favorite-icon {
+                fill: #4999ee;
+            }
+
+        }
+    }
+
+    & .image-top-container {
+        position: absolute;
+        top: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+
+
+    }
+
+
+
+
+
+
+    & .card-button {
+        text-transform: capitalize;
+        ;
+        border: 1px solid #363ae3;
+        color: #363ae3;
+        border-radius: 20px;
+        padding: 5px 15px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    // &:hover {
+    //     & .card-button {
+    //         background: #363ae3;
+    //         border: 1px solid #363ae3;
+    //         color: #f5f5f5;
+
+    //     }
+    // }
+}
+
+.show-more-button {
+    text-transform: capitalize !important;
+    border: 1px solid #363ae3 !important;
+    background: #363ae3 !important;
+    color: #f5f5f5 !important;
+    border-radius: 20px !important;
+    padding: 5px 20px !important;
+    font-weight: 500;
+    margin-top: 20px !important;
+    text-align: center !important;
+
+    // &:hover {
+    //     background: none !important;
+    //     border: 1px solid #363ae3 !important;
+    //     color: #363ae3 !important;
+
+    // }
+}
